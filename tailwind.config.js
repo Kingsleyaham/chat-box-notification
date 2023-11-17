@@ -16,6 +16,10 @@ export default {
         white: "#fff",
         danger: "#E33629",
       },
+      screens: {
+        xl: "1440px",
+        "2xl": "1600px",
+      },
     },
     fontFamily: {
       display: ["Darker Grotesque", "sans-serif"],

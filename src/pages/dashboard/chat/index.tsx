@@ -9,7 +9,7 @@ const Chat = () => {
       <div className="w-96">
         <ChatSideBar />
       </div>
-      <div className="w-[75%] mt-2">
+      <div className="fixed pl-96 mt-2 w-full">
         <Outlet />
       </div>
     </div>
