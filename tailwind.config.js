@@ -23,6 +23,7 @@ export default {
     },
     fontFamily: {
       display: ["Darker Grotesque", "sans-serif"],
+      secondary: ["Rubik", "sans-serif"],
     },
   },
   plugins: [require("@tailwindcss/forms"), require("daisyui")],

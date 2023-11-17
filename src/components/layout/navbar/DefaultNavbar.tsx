@@ -1,23 +1,19 @@
-import { Link, useLocation } from "react-router-dom";
-import DefaultUser from "../../assets/default-user.png";
-import SearchBar from "../form/SearchBar";
-import BookmarkIcon from "../icons/BookmarkIcon";
-import ChatIcon from "../icons/ChatIcon";
-import NotificationIcon from "../icons/NotificationIcon";
+import { Link } from "react-router-dom";
+import DefaultUser from "../../../assets/default-user.png";
+import SearchBar from "../../form/SearchBar";
+import BookmarkIcon from "../../icons/BookmarkIcon";
+import ChatIcon from "../../icons/ChatIcon";
+import NotificationIcon from "../../icons/NotificationIcon";
 
-const Navbar = () => {
-  const { pathname } = useLocation();
+type PropTypes = {
+  isActive: (path: string) => boolean;
+};
 
-  const isActive = (path: string) => {
-    if (pathname.startsWith(`/${path}`)) return true;
-
-    return false;
-  };
-
+const DefaultNavbar = ({ isActive }: PropTypes) => {
   return (
     <nav
       className="navbar fixed z-50 bg-white lg:px-20 px-8
-     md:py-4 items-center"
+       md:py-4 items-center"
     >
       <div className="navbar-start">
         <h1 className="">
@@ -31,7 +27,7 @@ const Navbar = () => {
         <div className="grid grid-cols-4">
           <button className="btn btn-ghost btn-circle hover:bg-accent4">
             <Link to="#">
-              <BookmarkIcon />
+              <BookmarkIcon isActive={isActive("bookmark")} />
             </Link>
           </button>
           <button className="btn btn-ghost btn-circle hover:bg-accent4">
@@ -55,4 +51,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default DefaultNavbar;
