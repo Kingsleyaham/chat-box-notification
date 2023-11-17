@@ -3,7 +3,10 @@ import EmojiIcon from "./icons/EmojiIcon";
 import SendIcon from "./icons/SendIcon";
 import VoiceNoteIcon from "./icons/VoiceNoteIcon";
 
-const ChatFooter = () => {
+type propTypes = {
+  setInputIsFocused: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const ChatFooter = ({ setInputIsFocused }: propTypes) => {
   return (
     <div className="fixed bottom-0 bg-white py-2 overflow-x-hidden w-full left-0 pl-96 z-0">
       <div className="flex justify-start items-center gap-1 px-8">
@@ -15,6 +18,8 @@ const ChatFooter = () => {
             type="text"
             className="input-control rounded-full w-full text-grey font-medium text-lg border-0 focus:border-0"
             placeholder="Message"
+            onFocus={() => setInputIsFocused(true)}
+            onBlur={() => setInputIsFocused(false)}
           />
         </div>
 
