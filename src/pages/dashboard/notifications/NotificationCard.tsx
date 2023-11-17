@@ -19,7 +19,7 @@ const NotificationCard = ({
 }: NotificationProps) => {
   return (
     <div
-      className={`flex items-center justify-between  border-b-[1.8px] cursor-pointer hover:shadow-xl ${
+      className={`flex items-center justify-between  border-b-[1.8px] cursor-pointer hover:shadow-xl z-0 ${
         isUnread ? "bg-accent5" : ""
       }`}
     >

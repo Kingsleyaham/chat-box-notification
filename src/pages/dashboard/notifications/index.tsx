@@ -13,9 +13,9 @@ import NotificationCard from "./NotificationCard";
 
 const Notifications = () => {
   return (
-    <div className="bg-accent5 h-screen mt-8">
+    <div className="bg-accent5 lg:h-screen lg:mt-8 mb-12 lg:mb-0">
       <section className=" p-8">
-        <div className="w-8/12 mx-auto pt-3">
+        <div className="w-11/12 md:w-10/12 lg:w-8/12 mx-auto pt-3">
           <div className="flex justify-between items-center">
             <h2 className="text-3xl font-bold">Notification</h2>
             <button className="btn-link text-primary font-semibold text-lg">
