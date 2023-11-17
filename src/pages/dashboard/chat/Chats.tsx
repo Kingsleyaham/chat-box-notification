@@ -10,6 +10,7 @@ import MessageBox from "./components/MessageBox";
 
 const Chats = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [inputIsFocused, setInputIsFocused] = useState(false);
 
   return (
     <div className="w-full">
@@ -73,8 +74,8 @@ const Chats = () => {
           </div>
         </div>
       </div>
-      <ChatReplySuggestions />
-      <ChatFooter />
+      {inputIsFocused && <ChatReplySuggestions />}
+      <ChatFooter setInputIsFocused={setInputIsFocused} />
     </div>
   );
 };
