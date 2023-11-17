@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  h3 {
+    @apply text-[20px] font-bold;
+  }
+
+  p {
+    @apply text-[16px];
+  }
+
+  body {
+    @apply text-black text-[16px];
+  }
+}
+
+@layer components {
+  .search-input {
+    @apply pr-2 py-3 rounded-badge pl-12 font-semibold focus:outline-none focus:border-accent;
+  }
+
+  .tab {
+    @apply text-grey text-[22px] font-bold;
+  }
+  .tab-active {
+    @apply text-black;
+  }
+  .form-control {
+    @apply w-full py-3 space-y-2;
+  }
+  .input-control {
+    @apply rounded-lg text-[16px] py-3 w-full border-gray-300 focus:border-primary focus:outline-none;
+  }
+
+  .box-wrapper {
+    @apply bg-white rounded-lg p-4 pt-8 pr-6 pb-2 mb-8;
+  }
+
+  .sidebar-link {
+    @apply text-[18px] font-bold;
+  }
+
+  .label {
+    @apply text-[17px] font-medium;
+  }
+
+  .default-btn {
+    @apply btn font-semibold text-white text-base hover:opacity-80 px-10 py-2 border-0 outline-none;
+  }
+
+  .danger-btn {
+    @apply cursor-pointer rounded-lg px-8 py-2 font-semibold text-lg text-danger hover:bg-accent4;
+  }
+}
