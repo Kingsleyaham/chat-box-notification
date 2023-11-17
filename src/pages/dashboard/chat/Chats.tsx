@@ -37,7 +37,7 @@ const Chats = () => {
           )}
         </div>
       </div>
-      <div className="scrollable-content h-[60vh] xl:h-[65vh] 2xl:h-[70vh] w-11/12 lg:w-10/12 mx-auto">
+      <div className="scrollable-content h-[60vh] xl:h-[65vh] 2xl:h-[70vh] w-full mx-auto">
         <div className="flex items-center gap-4 bg-[#fafafa] shadow-lg  mt-1 px-6 py-4 w-[97%]">
           <div>
             <img src={Apartment} alt="" width="110px" height="80px" />
