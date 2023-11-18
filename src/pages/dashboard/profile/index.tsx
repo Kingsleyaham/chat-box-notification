@@ -9,7 +9,7 @@ const Profile = () => {
   return (
     <>
       {isTabletOrMobile ? (
-        <div className="w-full">
+        <div className="w-full ">
           <ProfileMobileNav />
           <Outlet />
         </div>
