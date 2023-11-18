@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import SideBar from "./ProfileSideBar";
 
 const Profile = () => {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 
   return (
     <div className="flex gap-8">

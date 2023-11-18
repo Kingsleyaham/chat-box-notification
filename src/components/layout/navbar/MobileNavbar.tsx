@@ -16,15 +16,17 @@ const MobileNavbar = ({ isActive }: PropTypes) => {
   };
 
   return (
-    <div className="btm-nav">
-      <button className={`${isHome() ? "active" : ""} flex flex-col justify-center gap-1`}>
+    <div className="btm-nav bg-white z-30">
+      <button className={`${isHome() ? "active bg-white" : ""} flex flex-col justify-center gap-1`}>
         <Link to="/">
           <HomeIcon />
         </Link>
         <span className="font-semibold text-grey">Home</span>
       </button>
       <button
-        className={`${isActive("bookmark") ? "active" : ""} flex flex-col justify-center gap-1`}
+        className={`${
+          isActive("bookmark") ? "active bg-white" : ""
+        } flex flex-col justify-center gap-1`}
       >
         <Link to="#">
           <BookmarkIcon />
@@ -32,7 +34,9 @@ const MobileNavbar = ({ isActive }: PropTypes) => {
         <span className="font-semibold text-grey">Bookmark</span>
       </button>
       <button
-        className={`${isActive("wallet") ? "active" : ""} flex flex-col justify-center gap-1`}
+        className={`${
+          isActive("wallet") ? "active bg-white" : ""
+        } flex flex-col justify-center gap-1`}
       >
         <Link to="/wallet">
           <WalletIcon />
@@ -40,7 +44,9 @@ const MobileNavbar = ({ isActive }: PropTypes) => {
         <span className="font-semibold text-grey">Wallet</span>
       </button>
       <button
-        className={`${isActive("profile") ? "active" : ""} flex flex-col justify-center gap-1`}
+        className={`${
+          isActive("profile") ? "active bg-white" : ""
+        } flex flex-col justify-center gap-1`}
       >
         <Link to="/profile">
           <ProfileIcon />

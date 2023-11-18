@@ -5,7 +5,7 @@ import MobileHeader from "../../components/layout/MobileHeader";
 import Navbar from "../../components/layout/navbar";
 
 const Dashboard = () => {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
   const { pathname } = useLocation();
 
   const isActive = (path: string) => {
@@ -13,24 +13,24 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="bg-accent5 h-screen overflow-auto">
+    <>
       {isTabletOrMobile ? (
-        <>
+        <div className="h-screen overflow-auto bg-white">
           <MobileHeader isActive={isActive} />
           <Navbar isActive={isActive} />
-          <div className="mt-6">
+          <div className="pt-2 bg-white">
             <Outlet />
           </div>
-        </>
+        </div>
       ) : (
-        <>
+        <div className="h-screen overflow-auto  bg-accent5">
           <Navbar isActive={isActive} />
-          <div className="mt-24">
+          <div className="pt-24">
             <Outlet />
           </div>
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
