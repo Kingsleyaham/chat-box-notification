@@ -16,7 +16,7 @@ const Notifications = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 
   return (
-    <div className="h-screen lg:mt-8 mb-28 lg:mb-0 bg-white">
+    <div className="lg:h-screen lg:mt-8 pb-28 lg:mb-0 bg-white">
       <section className=" lg:p-8 px-8">
         <div className="w-full sm:w-10/12 lg:w-8/12 mx-auto">
           {!isTabletOrMobile && (

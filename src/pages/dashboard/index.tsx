@@ -15,10 +15,10 @@ const Dashboard = () => {
   return (
     <>
       {isTabletOrMobile ? (
-        <div className="bg-white">
+        <div className="h-screen bg-white">
           <Navbar isActive={isActive} />
           {!isActive("profile") && <MobileHeader isActive={isActive} />}
-          <div className="pt-2 ">
+          <div className="pt-2">
             <Outlet />
           </div>
         </div>

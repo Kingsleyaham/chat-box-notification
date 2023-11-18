@@ -25,6 +25,9 @@ export default {
       display: ["Darker Grotesque", "sans-serif"],
       secondary: ["Rubik", "sans-serif"],
     },
+    daisyui: {
+      themes: ["light"],
+    },
   },
   plugins: [require("@tailwindcss/forms"), require("daisyui")],
 };

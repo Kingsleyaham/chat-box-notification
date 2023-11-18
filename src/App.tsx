@@ -11,7 +11,7 @@ import Settings from "./pages/dashboard/profile/settings";
 
 function App() {
   return (
-    <div className="font-display">
+    <div className="font-display ">
       <Routes>
         <Route path="/" element={<Dashboard />}>
           <Route path="/profile" element={<Profile />}>

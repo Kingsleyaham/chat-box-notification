@@ -26,7 +26,7 @@ const AccountOverview = () => {
         <h2 className="text-3xl font-bold">Account Overview</h2>
       </div>
 
-      <div className="bg-white rounded-lg mb-12">
+      <div className="bg-white rounded-lg mb-12 shadow-md">
         {/* Avatar Section */}
         <div className="py-6 border-b flex flex-col md:flex-row items-center justify-start gap-0 md:gap-16">
           <div className="px-8">
