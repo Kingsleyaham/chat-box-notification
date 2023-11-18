@@ -7,7 +7,7 @@ type PropTypes = {
 };
 
 const Navbar = ({ isActive }: PropTypes) => {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 
   console.log(isTabletOrMobile);
 
