@@ -20,7 +20,7 @@ const Notifications = () => {
       <section className=" lg:p-8 px-8">
         <div className="w-full sm:w-10/12 lg:w-8/12 mx-auto">
           {!isTabletOrMobile && (
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center pb-4">
               <h2 className="text-3xl font-bold">Notification</h2>
               <button className="btn-link text-primary font-semibold text-lg">
                 Mark all as read
