@@ -21,12 +21,12 @@ const AccountOverview = () => {
     setStates(newStates);
   };
   return (
-    <div className="px-8 md:px-12">
+    <div className="px-8 md:px-12 pb-28">
       <div className="pt-6 lg:pt-2 pb-6 ">
         <h2 className="text-3xl font-bold">Account Overview</h2>
       </div>
 
-      <div className="bg-white rounded-lg mb-12 shadow-md">
+      <div className="bg-white rounded-lg  shadow-md">
         {/* Avatar Section */}
         <div className="py-6 border-b flex flex-col md:flex-row items-center justify-start gap-0 md:gap-16">
           <div className="px-8">
@@ -239,7 +239,7 @@ const AccountOverview = () => {
           </div>
         </div>
 
-        <div className="flex justify-around md:justify-end py-16 lg:px-24 lg:gap-12">
+        <div className="flex justify-around md:justify-end py-8 lg:py-16 lg:px-24 lg:gap-12 gap-1">
           <button className="btn btn-ghost text-danger text-[14px] px-4 md:text-lg">
             Deactivate Account
           </button>

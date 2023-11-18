@@ -15,7 +15,7 @@ const Dashboard = () => {
   return (
     <>
       {isTabletOrMobile ? (
-        <div className="h-screen bg-white">
+        <div className="">
           <Navbar isActive={isActive} />
           {!isActive("profile") && <MobileHeader isActive={isActive} />}
           <div className="pt-2">
@@ -23,7 +23,7 @@ const Dashboard = () => {
           </div>
         </div>
       ) : (
-        <div className="h-screen overflow-auto  bg-accent5">
+        <div className="h-screen overflow-auto bg-accent5">
           <Navbar isActive={isActive} />
           <div className="pt-24">
             <Outlet />
