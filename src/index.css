@@ -43,7 +43,7 @@
   }
 
   .box-wrapper {
-    @apply bg-white rounded-lg p-1 md:p-4 pt-4 md:pt-8 md:pr-6 pb-2 mb-32 lg:mb-8;
+    @apply bg-white rounded-lg p-1 md:p-4 pt-4 md:pt-8 md:pr-6 pb-2;
   }
 
   .sidebar-link {
