@@ -14,23 +14,24 @@ const MobileHeader = ({ isActive }: PropTypes) => {
           <ArrowRight />
         </button>
       </div>
-
-      <div className="px-2 py-2 rounded-full flex justify-around gap-1 bg-accent4">
-        <button
-          className={`btn btn-ghost text-base sm:text-lg text-grey font-normal ${
-            isActive("notifications") ? "bg-white font-medium" : ""
-          } rounded-full px-8 sm:px-16`}
-        >
-          <Link to="/notifications">Notifications</Link>
-        </button>
-        <button
-          className={`btn btn-ghost text-base sm:text-lg text-grey font-normal ${
-            isActive("chat") ? "bg-white font-medium" : ""
-          } rounded-full px-8 sm:px-16`}
-        >
-          <Link to="/chat">Messages</Link>
-        </button>
-      </div>
+      {!isActive("chat") && (
+        <div className="px-2 py-2 rounded-full flex justify-around gap-1 bg-accent4">
+          <button
+            className={`btn btn-ghost text-base sm:text-lg text-grey font-normal ${
+              isActive("notifications") ? "bg-white font-medium" : ""
+            } rounded-full px-8 sm:px-16`}
+          >
+            <Link to="/notifications">Notifications</Link>
+          </button>
+          <button
+            className={`btn btn-ghost text-base sm:text-lg text-grey font-normal ${
+              isActive("chat") ? "bg-white font-medium" : ""
+            } rounded-full px-8 sm:px-16`}
+          >
+            <Link to="/chat">Messages</Link>
+          </button>
+        </div>
+      )}
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Dashboard = () => {
     <>
       {isTabletOrMobile ? (
         <div className="">
-          <Navbar isActive={isActive} />
+          {!isActive("chat") && <Navbar isActive={isActive} />}
           {!isActive("profile") && <MobileHeader isActive={isActive} />}
           <div className="pt-2">
             <Outlet />

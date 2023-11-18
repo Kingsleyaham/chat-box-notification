@@ -8,7 +8,7 @@ const Chat = () => {
   return (
     <div className="flex gap-8">
       {isTabletOrMobile ? (
-        <div className="fixed mt-2 w-full">
+        <div className="mt-2 w-full bg-white">
           <Outlet />
         </div>
       ) : (

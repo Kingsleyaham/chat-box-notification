@@ -1,6 +1,14 @@
-const VoiceNoteIcon = () => {
+import { ChatIconProps } from "../ChatFooter";
+
+const VoiceNoteIcon = ({ isMobile }: ChatIconProps) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={isMobile ? "20" : "30"}
+      height={isMobile ? "20" : "30"}
+      viewBox="0 0 30 30"
+      fill="none"
+    >
       <path
         d="M11.25 26.25H18.75M22.5 12.1875V14.0625C22.5 18.1875 19.125 21.5625 15 21.5625C10.875 21.5625 7.5 18.1875 7.5 14.0625V12.1875M15 21.5625V26.25"
         stroke="#111110"
