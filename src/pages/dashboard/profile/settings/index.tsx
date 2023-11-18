@@ -8,8 +8,8 @@ const Settings = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div>
-      <div className="py-2 pb-6">
+    <div className="px-8 md:px-12">
+      <div className="py-4 pb-6">
         <h2 className="text-3xl font-bold">Settings</h2>
       </div>
 

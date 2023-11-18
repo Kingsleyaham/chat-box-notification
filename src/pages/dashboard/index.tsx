@@ -16,7 +16,7 @@ const Dashboard = () => {
     <>
       {isTabletOrMobile ? (
         <div className="h-screen overflow-auto bg-white">
-          <MobileHeader isActive={isActive} />
+          {!isActive("profile") && <MobileHeader isActive={isActive} />}
           <Navbar isActive={isActive} />
           <div className="pt-2 bg-white">
             <Outlet />

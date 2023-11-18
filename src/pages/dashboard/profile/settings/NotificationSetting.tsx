@@ -2,7 +2,7 @@ import ToggleSwitch from "../../../../components/ToggleSwitch";
 
 const NotificationSetting = () => {
   return (
-    <div className="pt-8">
+    <div className="pt-8 md:px-0 p-2">
       <div className="flex items-center justify-end pb-6 gap-8">
         <div className="w-5/12">
           <h3>Email Notification</h3>
@@ -23,36 +23,36 @@ const NotificationSetting = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-end pb-6 gap-8">
-        <div className="w-5/12">
+      <div className="flex items-center justify-between md:justify-end pb-6 gap-8">
+        <div className="w-9/12 md:w-5/12">
           <h3>When Product is ordered</h3>
-          <p>
+          <p className="text-[16px] text-base">
             Get notified when buyers visit your product. This helps you know what they want and
             update your products.
           </p>
         </div>
-        <div className="">
+        <div>
           <ToggleSwitch />
         </div>
       </div>
 
-      <div className="flex items-center justify-end pb-6 gap-8">
-        <div className="w-5/12">
+      <div className="flex items-center justify-between md:justify-end pb-6 gap-8">
+        <div className="w-9/12 md:w-5/12">
           <h3>When a product is bookmarked</h3>
-          <p>
+          <p className="text-[16px] text-base">
             Get notified when buyers visit your product. This helps you know what they want and
             update your products.
           </p>
         </div>
-        <div className="">
+        <div>
           <ToggleSwitch />
         </div>
       </div>
 
-      <div className="flex items-center justify-end pb-6 gap-8">
-        <div className="w-5/12">
+      <div className="flex items-center justify-between md:justify-end pb-6 gap-8">
+        <div className="w-9/12 md:w-5/12">
           <h3>Buyers Visit</h3>
-          <p>
+          <p className="text-[16px] text-base">
             Get notified when buyers visit your product. This helps you know what they want and
             update your products.
           </p>
@@ -82,10 +82,10 @@ const NotificationSetting = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-end pb-6 gap-8">
-        <div className="w-5/12">
+      <div className="flex items-center justify-between md:justify-end pb-6 gap-8">
+        <div className="w-9/12 md:w-5/12">
           <h3>When Product is ordered</h3>
-          <p>
+          <p className="text-[16px] text-base">
             Get notified when buyers visit your product. This helps you know what they want and
             update your products.
           </p>
@@ -95,10 +95,10 @@ const NotificationSetting = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-end pb-6 gap-8">
-        <div className="w-5/12">
+      <div className="flex items-center justify-between md:justify-end pb-6 gap-8">
+        <div className="w-9/12 md:w-5/12">
           <h3>When a product is bookmarked</h3>
-          <p>
+          <p className="text-[16px] text-base">
             Get notified when buyers visit your product. This helps you know what they want and
             update your products.
           </p>
@@ -108,10 +108,10 @@ const NotificationSetting = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-end pb-6 gap-8">
-        <div className="w-5/12">
+      <div className="flex items-center justify-between md:justify-end pb-6 gap-8">
+        <div className="w-9/12 md:w-5/12">
           <h3>Buyers Visit</h3>
-          <p>
+          <p className="text-[16px] text-base">
             Get notified when buyers visit your product. This helps you know what they want and
             update your products.
           </p>

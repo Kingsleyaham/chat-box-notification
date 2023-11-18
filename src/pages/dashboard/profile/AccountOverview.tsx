@@ -21,29 +21,35 @@ const AccountOverview = () => {
     setStates(newStates);
   };
   return (
-    <div>
-      <div className="py-2 pb-6">
+    <div className="px-8 md:px-12">
+      <div className="pt-6 lg:pt-2 pb-6 ">
         <h2 className="text-3xl font-bold">Account Overview</h2>
       </div>
 
       <div className="bg-white rounded-lg mb-12">
         {/* Avatar Section */}
-        <div className="py-6 border-b flex items-center justify-start gap-16">
+        <div className="py-6 border-b flex flex-col md:flex-row items-center justify-start gap-0 md:gap-16">
           <div className="px-8">
             <h3>Avatar</h3>
             <p className="text-lg">Edit your profile picture</p>
           </div>
-          <div>
-            <img src={EditProfile} alt="edit profile" width="90px" height="90px" />
+          <div className="md:order-last order-first">
+            <img
+              src={EditProfile}
+              alt="edit profile"
+              // width="90px"
+              // height="90px"
+              className="md:w-24 md:h-24 w-16 h-16"
+            />
           </div>
         </div>
         {/* Contact Info Section */}
-        <div className="py-6 border-b flex justify-start gap-16">
-          <div className="px-8">
+        <div className="py-6 border-b flex flex-col md:flex-row justify-start gap-4 md:gap-16">
+          <div className="md:px-8 px-4">
             <h3>Contact Info</h3>
             <p className="text-lg">Update your contact Info</p>
           </div>
-          <div className="w-3/6">
+          <div className="lg:w-3/6 md:w-4/6 w-full md:px-0 md:pr-4 px-4">
             <div className="form-control">
               <label className="label">
                 <span>Full Name</span>
@@ -83,12 +89,12 @@ const AccountOverview = () => {
         </div>
 
         {/* Additional Info Section */}
-        <div className="py-6 border-b flex justify-start gap-16">
-          <div className="px-8">
+        <div className="py-6 border-b flex flex-col md:flex-row justify-start gap-4 md:gap-16">
+          <div className="md:px-8 px-4">
             <h3>Additional Info</h3>
             <p className="text-lg">Add other Info about you</p>
           </div>
-          <div className="w-3/6">
+          <div className="lg:w-3/6 md:w-4/6 w-full md:px-0 md:pr-4 px-4">
             <div className="form-control">
               <label className="label">
                 <span>Select Location</span>
@@ -125,12 +131,12 @@ const AccountOverview = () => {
         </div>
 
         {/* Address Section */}
-        <div className="py-6 border-b flex justify-start gap-16">
-          <div className="px-8">
+        <div className="py-6 border-b flex flex-col md:flex-row justify-start gap-4 md:gap-16">
+          <div className="md:px-8 px-4">
             <h3>Address</h3>
             <p className="text-lg">Add other Info about you</p>
           </div>
-          <div className="w-3/6">
+          <div className="lg:w-3/6 md:w-4/6 w-full md:px-0 md:pr-4 px-4">
             <div className="form-control">
               <label className="label">
                 <span>Home Address</span>
@@ -178,11 +184,11 @@ const AccountOverview = () => {
         </div>
 
         {/* Social Media Contact Section */}
-        <div className="py-6 border-b-0 flex justify-start gap-16">
-          <div className="px-8">
+        <div className="py-6 border-b flex flex-col md:flex-row justify-start gap-4 md:gap-16">
+          <div className="md:pl-8 px-4">
             <h3>Social Media Contact</h3>
           </div>
-          <div className="w-3/6">
+          <div className="lg:w-3/6 md:w-4/6 w-full md:px-0 md:pr-4 px-4">
             <div className="form-control">
               <label className="label">
                 <span>Facebook</span>
@@ -233,7 +239,7 @@ const AccountOverview = () => {
           </div>
         </div>
 
-        <div className="flex justify-end py-16 px-24 gap-12">
+        <div className="flex justify-between md:justify-end py-16 lg:px-24 lg:gap-12">
           <button className="btn btn-ghost text-danger text-lg">Deactivate Account</button>
           <Button>Save Changes</Button>
         </div>
