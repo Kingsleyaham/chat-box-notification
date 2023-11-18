@@ -240,7 +240,9 @@ const AccountOverview = () => {
         </div>
 
         <div className="flex justify-between md:justify-end py-16 lg:px-24 lg:gap-12">
-          <button className="btn btn-ghost text-danger text-lg">Deactivate Account</button>
+          <button className="btn btn-ghost text-danger text-base md:text-lg">
+            Deactivate Account
+          </button>
           <Button>Save Changes</Button>
         </div>
       </div>
