@@ -1,8 +1,12 @@
 import SearchBar from "../../../../components/form/SearchBar";
 import ChatCard from "./ChatCard";
 import MessagesMenu from "./MessagesMenu";
+import NoMessages from "./NoMessages";
 
 const ChatMobileSideBar = () => {
+  // will be removed during implementation
+  // just to mock when there is no messages
+  const noMessage = true;
   return (
     <div>
       <div className="flex justify-between px-6 items-center pb-3">
@@ -15,11 +19,24 @@ const ChatMobileSideBar = () => {
         <h2 className="text-2xl">My Messages</h2>
       </div>
 
-      <div className="mt-3">
-        <ChatCard isActive={true} />
+      {noMessage ? (
+        <NoMessages>
+          <p>You don’t have any messages yet.</p>
+          <p>
+            Find something in the{" "}
+            <a href="#" className="text-primary">
+              marketplace
+            </a>{" "}
+            to discuss.
+          </p>
+        </NoMessages>
+      ) : (
+        <div className="mt-3">
+          <ChatCard isActive={true} />
 
-        <ChatCard />
-      </div>
+          <ChatCard />
+        </div>
+      )}
     </div>
   );
 };
