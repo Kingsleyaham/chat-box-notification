@@ -14,7 +14,7 @@ const MobileHeader = ({ isActive }: PropTypes) => {
           <ArrowRight />
         </button>
       </div>
-      {!isActive("chat") && (
+      {!isActive("chat/") && (
         <div className="px-2 py-2 rounded-full flex justify-around gap-1 bg-accent4">
           <button
             className={`btn btn-ghost text-base sm:text-lg text-grey font-normal ${

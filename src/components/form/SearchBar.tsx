@@ -2,9 +2,10 @@ import SearchIcon from "../icons/SearchIcon";
 
 type PropTypes = {
   placeholder?: string;
+  classNames?: string;
 };
 
-const SearchBar = ({ placeholder }: PropTypes) => {
+const SearchBar = ({ placeholder, classNames }: PropTypes) => {
   return (
     <div className="form-control">
       <label className="relative block">
@@ -14,7 +15,7 @@ const SearchBar = ({ placeholder }: PropTypes) => {
         <input
           type="text"
           placeholder={placeholder ?? "Search..."}
-          className="pr-2 py-3 rounded-badge pl-12 w-full font-semibold lg:max-w-[400px] focus:outline-none focus:border-accent"
+          className={`pr-2 py-3 rounded-badge pl-12 w-full font-semibold lg:max-w-[400px] focus:outline-none focus:border-accent ${classNames}`}
         />
       </label>
     </div>
