@@ -8,7 +8,7 @@ const ProfileSideBar = ({ menuIsOpen }: PropTypes) => {
     <div
       id="sideNav"
       className={`lg:block ${
-        menuIsOpen ? "absolute top-5 w-96 transition ease-in-out duration-700" : "relative hidden"
+        menuIsOpen ? "fixed top-3 w-96 transition ease-in-out duration-700" : "relative hidden"
       } lg:fixed rounded-none border-none lg:w-80 top-0 z-30 `}
     >
       <div className="lg:h-screen h-[80vh] pt-16">
