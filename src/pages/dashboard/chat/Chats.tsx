@@ -122,7 +122,7 @@ const Chats = () => {
             </div>
           </div>
         </div>
-        {inputIsFocused && <ChatReplySuggestions />}
+        {inputIsFocused && !isTabletOrMobile && <ChatReplySuggestions />}
         <ChatFooter setInputIsFocused={setInputIsFocused} />
       </div>
     </div>

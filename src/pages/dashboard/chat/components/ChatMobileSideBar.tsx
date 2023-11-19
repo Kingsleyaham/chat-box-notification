@@ -6,7 +6,7 @@ import NoMessages from "./NoMessages";
 const ChatMobileSideBar = () => {
   // will be removed during implementation
   // just to mock when there is no messages
-  const noMessage = true;
+  const noMessage = false;
   return (
     <div>
       <div className="flex justify-between px-6 items-center pb-3">
