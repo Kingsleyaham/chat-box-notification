@@ -1,3 +1,8 @@
+body {
+  /* prevent blue background from showing when element is clicked in chrome browser */
+  -webkit-tap-highlight-color: transparent;
+}
+
 .toggle-switch:checked ~ span:last-child {
   --tw-translate-x: 1.75rem; /* translate-x-7 */
 }
