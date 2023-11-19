@@ -38,7 +38,7 @@ const MobileNavbar = ({ isActive }: PropTypes) => {
           isActive("wallet") ? "active bg-white" : ""
         } flex flex-col justify-center gap-1`}
       >
-        <Link to="/wallet">
+        <Link to="#">
           <WalletIcon />
         </Link>
         <span className="font-semibold text-grey">Wallet</span>
