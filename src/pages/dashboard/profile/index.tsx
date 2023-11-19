@@ -8,8 +8,6 @@ const Profile = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-  console.log(menuIsOpen);
-
   return (
     <>
       {isTabletOrMobile ? (
