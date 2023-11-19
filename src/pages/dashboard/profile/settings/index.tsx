@@ -15,7 +15,7 @@ const Settings = () => {
 
       <div className="box-wrapper">
         {/* Tabs */}
-        <div className="tabs justify-start pb-4 font-semibold">
+        <div className="tabs justify-start pb-4 font-semibold select-none">
           <a
             className={`tab ${activeTab == 0 ? "tab-active" : ""}`}
             onClick={() => setActiveTab(0)}

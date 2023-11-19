@@ -33,7 +33,7 @@ const ChatCard = ({ isActive }: PropTypes) => {
         </div>
 
         {isTabletOrMobile && (
-          <div className="absolute left-12 top-4 sm:left-14 sm:top-2.5 md:top-[1.5rem]">
+          <div className="absolute left-[2.8rem] top-4 sm:left-14 sm:top-2.5 md:top-[1.5rem]">
             <ActiveIndicator />
           </div>
         )}
