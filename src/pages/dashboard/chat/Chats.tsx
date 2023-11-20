@@ -88,7 +88,7 @@ const Chats = () => {
             isTabletOrMobile ? "overflow-y-auto overflow-x-hidden" : "overflow-y-scroll"
           } h-[65vh] lg:h-[60vh] xl:h-[65vh] 2xl:h-[70vh] w-full mx-auto`}
         >
-          <div className="flex items-center md:gap-4 gap-2 bg-[#fafafa] md:shadow-lg  mt-1 md:px-6 px-2 py-4 sm:w-[97%] w-full">
+          <div className="flex items-center md:gap-4 gap-2 bg-[#fafafa] md:shadow-lg mt-1 md:px-6 px-2 py-4 sm:w-[97%] mx-auto w-full">
             <div>
               <img src={Apartment} alt="" width="110px" height="80px" />
             </div>
