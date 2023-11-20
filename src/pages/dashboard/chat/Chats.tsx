@@ -102,7 +102,7 @@ const Chats = () => {
             </div>
           </div>
           {/* Messages */}
-          <div className="pt-8 px-4 md:px-16 md:pb-32">
+          <div className="pt-8 px-4 md:px-16 md:pb-64">
             <div className="clear-both float-right my-4 md:my-8">
               <MessageBox message="Is this still available?" bg="#86DCFF" color="#111110" />
               {isTabletOrMobile && (

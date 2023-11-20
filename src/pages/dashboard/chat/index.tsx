@@ -12,7 +12,7 @@ const Chat = () => {
     <div className="">
       {isTabletOrMobile ? (
         <>
-          <div className="mt-2 w-full bg-white">
+          <div className="mt-2 w-full bg-white ">
             {pathname === "/chat" ? (
               <MobileSideBar />
             ) : (
