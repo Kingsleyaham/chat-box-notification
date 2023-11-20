@@ -9,7 +9,7 @@ const MobileHeader = ({ isActive }: PropTypes) => {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col gap-4 justify-start bg-white py-5 px-4 sm:px-12 font-secondary">
-      <div>
+      <div className="">
         <button onClick={() => navigate(-1)}>
           <ArrowRight />
         </button>

@@ -16,7 +16,7 @@ const ChatFooter = ({ setInputIsFocused }: propTypes) => {
   const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
   return (
-    <div className="fixed bottom-0 bg-white right-0 md:py-2 w-[87%] mx-auto my-[3%] md:my-0 rounded-full md:rounded-none md:px-0 overflow-x-hidden md:w-full left-0 lg:pl-96 z-0">
+    <div className="md:fixed bottom-0 bg-white right-0 md:py-2 w-full mx-auto my-[5%] md:my-0 rounded-full md:rounded-none md:px-0 overflow-x-hidden md:w-full left-0 lg:pl-96 z-0">
       <div className="flex justify-start items-center gap-1 px-4 md:px-8">
         <span className="cursor-pointer">
           <EmojiIcon isMobile={isMobile} />

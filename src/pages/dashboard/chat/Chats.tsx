@@ -51,7 +51,11 @@ const Chats = () => {
           </div>
         </div>
       )}
-      <div className="w-11/12 md:static md:mb-0 fixed overflow-y-auto left-0 right-0 h-screen mx-auto md:w-full md:p-0 p-4 md:mx-0 md:rounded-none bg-accent5 rounded-xl">
+      <div
+        className={
+          "w-11/12 md:static md:mb-0 overflow-y-auto left-0 right-0 mx-auto md:w-full md:p-0 px-3 pb-1 pt-5 md:mx-0 md:rounded-none bg-accent5 rounded-xl"
+        }
+      >
         {/* Chat Tittle */}
         {!isTabletOrMobile && (
           <div className="flex justify-between items-center bg-[#fafafa] shadow-lg py-5 px-16">

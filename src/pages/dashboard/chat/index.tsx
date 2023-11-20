@@ -1,7 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import { Outlet, useLocation } from "react-router-dom";
-import ChatSideBar from "./components/ChatSideBar";
 import MobileSideBar from "./components/ChatMobileSideBar";
+import ChatSideBar from "./components/ChatSideBar";
 
 const Chat = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
@@ -9,11 +9,17 @@ const Chat = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="flex gap-8">
+    <div className="">
       {isTabletOrMobile ? (
         <>
           <div className="mt-2 w-full bg-white">
-            {pathname === "/chat" ? <MobileSideBar /> : <Outlet />}
+            {pathname === "/chat" ? (
+              <MobileSideBar />
+            ) : (
+              <div className="h-full mb-2 md:mb-0">
+                <Outlet />
+              </div>
+            )}
           </div>
         </>
       ) : (

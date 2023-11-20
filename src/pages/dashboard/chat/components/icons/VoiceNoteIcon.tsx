@@ -13,7 +13,7 @@ const VoiceNoteIcon = ({ isMobile }: ChatIconProps) => {
         d="M11.25 26.25H18.75M22.5 12.1875V14.0625C22.5 18.1875 19.125 21.5625 15 21.5625C10.875 21.5625 7.5 18.1875 7.5 14.0625V12.1875M15 21.5625V26.25"
         stroke="#111110"
         strokeWidth="1.5"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         strokeLinecap="square"
       />
       <path
